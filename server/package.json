@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Production API for Book Store application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.2",
+    "express-rate-limit": "^8.7.0",
+    "firebase-admin": "^14.3.0",
+    "helmet": "^8.3.0",
+    "mongodb": "^6.21.0",
+    "nodemon": "^3.1.14"
+  }
+}
