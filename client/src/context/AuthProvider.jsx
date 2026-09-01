@@ -8,7 +8,7 @@ import {
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
-  getAuth,
+  // getAuth,
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
@@ -16,11 +16,13 @@ import {
   updateProfile,
 } from "firebase/auth";
 
-import app from "../firebase/firebase.config";
+import { auth } from "../firebase/firebase.config";
+
+// import app from "../firebase/firebase.config";
 
 export const AuthContext = createContext(null);
 
-const auth = getAuth(app);
+// const auth = getAuth(app);
 
 const googleProvider = new GoogleAuthProvider();
 
