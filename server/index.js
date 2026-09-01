@@ -55,7 +55,11 @@ const allowedOrigins = [
 app.use(
   cors({
     origin: allowedOrigins,
+<<<<<<< HEAD
     credentials: true,
+=======
+    credentials: true
+>>>>>>> 8a1940adbce0c2ac1eb3c1a9d3798e4dbc7456b7
 
     methods: [
       "GET",
