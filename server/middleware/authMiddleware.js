@@ -10,6 +10,7 @@ const authenticateUser = async (req, res, next) => {
         message: "Authentication required.",
       });
     }
+
     const idToken = authorization.split("Bearer ")[1];
 
     if (!idToken) {

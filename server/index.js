@@ -48,13 +48,10 @@ app.use(
   })
 );
 
-const allowedOrigins = [
-    process.env.CLIENT_URL
-];
-
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: CLIENT_URL.split(",")
+      .map((origin) => origin.trim()),
     credentials: true,
 
     methods: [
